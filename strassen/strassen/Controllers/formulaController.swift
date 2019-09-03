@@ -13,7 +13,7 @@ class FormulaController{
     
     static let sharedInstance = FormulaController()
     
-   func multiplyMatirx(matrixA:[[Int]], matrixB:[[Int]]){
+    func multiplyMatirx(matrixA:[[Int]], matrixB:[[Int]]) -> [Int]{
         var answerMatrix = [Int]()
         var AmatrixAsArray = [Int]()
         var BmatrixASArray = [Int]()
@@ -41,10 +41,9 @@ class FormulaController{
             bookMarkB = 0
             bookMarkA = 2
             
-    }
-        for line in answerMatrix{
-            print(line)
         }
-        
+        return answerMatrix
     }
+    
 }
+
