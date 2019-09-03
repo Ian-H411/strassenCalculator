@@ -11,6 +11,8 @@ import Foundation
 
 class FormulaController{
     
+    static let sharedInstance = FormulaController()
+    
    func multiplyMatirx(matrixA:[[Int]], matrixB:[[Int]]){
         var answerMatrix = [Int]()
         var AmatrixAsArray = [Int]()
